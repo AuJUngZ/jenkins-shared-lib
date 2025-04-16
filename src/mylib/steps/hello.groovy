@@ -1,7 +1,11 @@
 package mylib.steps
 
-Closure call() {
-    return { Map ctx ->
-        echo "👋 Hi ${ctx.name}"
+class hello {
+
+    static Closure call() {
+        return { Map ctx ->
+            echo "👋 Hello ${ctx.name}"
+        }
     }
+
 }
